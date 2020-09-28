@@ -6,8 +6,8 @@ namespace AgeApp
 {
     class EnterBirthDate
     {
-        private string BirthDate { get; }
-        public EnterBirthDate(string datein)
+        private DateTime BirthDate { get; } = new DateTime();
+        public EnterBirthDate(DateTime datein)
         {
             this.BirthDate = datein;
         }
