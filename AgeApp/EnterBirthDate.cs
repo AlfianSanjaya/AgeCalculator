@@ -6,5 +6,10 @@ namespace AgeApp
 {
     class EnterBirthDate
     {
+        private string BirthDate { get; }
+        public EnterBirthDate(string datein)
+        {
+            this.BirthDate = datein;
+        }
     }
 }
