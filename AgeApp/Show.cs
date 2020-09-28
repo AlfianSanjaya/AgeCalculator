@@ -13,11 +13,26 @@ namespace AgeApp
             Console.WriteLine("We will use your birthdate to calculate your age.");
 
             System.Threading.Thread.Sleep(5000);
+
+            Console.Clear();
         }
 
         public void PrintAge()
         {
-            Console.WriteLine($"The calculated age is {} year, {} months, {} days.");
+            Console.WriteLine($"The calculated age is  year,  months,  days.");
+        }
+
+        public int Continue()
+        {
+            Console.WriteLine("What do you want to do?");
+            Console.WriteLine("*************************************");
+            Console.WriteLine("1. Calculate a birthday          2. Quit");
+            Console.WriteLine("Press enter after input to continue");
+
+            string initchoice = Console.ReadLine();
+            int choice = Convert.ToInt32(initchoice);
+
+            return choice;
         }
     }
 

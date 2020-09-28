@@ -18,7 +18,19 @@ namespace AgeApp
 
             while (RunningProgram == true)
             {
-                
+                int todo = show.Continue();
+                if (todo == 1)
+                {
+
+                }
+                else if (todo == 2)
+                {
+                    RunningProgram = false;
+                }
+                else
+                {
+                    Console.WriteLine("ERROR! Try again!");
+                }
             }
         }
     }
