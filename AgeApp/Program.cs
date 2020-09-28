@@ -21,10 +21,14 @@ namespace AgeApp
                 int todo = show.Continue();
                 if (todo == 1)
                 {
+                    // Age
+                    EnterBirthDate enter = new EnterBirthDate();
+                    enter.askBirthDate(show);
 
                 }
                 else if (todo == 2)
                 {
+                    // Quit
                     RunningProgram = false;
                 }
                 else

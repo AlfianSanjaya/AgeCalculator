@@ -17,6 +17,11 @@ namespace AgeApp
             Console.Clear();
         }
 
+        public void AskBirthDate()
+        {
+            Console.WriteLine("What is your birthdate? (DD/MM/YYY)");
+        }
+
         public void PrintAge()
         {
             Console.WriteLine($"The calculated age is  year,  months,  days.");
